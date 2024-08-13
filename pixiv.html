@@ -1,0 +1,30 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="车万Project 手机资源">
+    <title>TouhouMobile - Pixiv</title>
+    <link rel="stylesheet" href="../TouhouMobile/style/index.css">
+    <script src="../TouhouMobile/module/sweetalert.min.js"></script>
+    <script src="../TouhouMobile/script/topele.js"></script>
+  </head>
+  <body>
+    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - Pixiv</h>
+    <div pd><bl>
+      This is a Pixiv cater basic Pixivcat<br>
+      Use to get Pixiv image<br>
+      input pid or pid-p
+    </bl></div><br>
+    <h>TouhouMobile - Cater</h>
+    <div pd>
+      <span style="font-size: 120%;color : #FCC;">img u want</span> : <input type="text" style="width : 100%;" id="inp">
+      <btn fw style="width : 94.5%;" id="get">Get</btn>
+      <img src="" title="none image" id="img" width="99.9%" style="border : none; backdrop-filter: blur( 3px );">
+      <fixed btn><a href="#" style="color : #FFF;" download="none.png" id="d" class="none-shadow">download img</a></fixed>
+      <fixed btn ps id="share">share image</fixed>
+    </div>
+    <script src="./script/pixiv.js"></script>
+  </body>
+</html>

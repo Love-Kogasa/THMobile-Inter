@@ -1,0 +1,36 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="车万Project 手机资源">
+    <title>TouhouMobile - API Document</title>
+    <link rel="stylesheet" href="../TouhouMobile/style/index.css">
+    <script src="../TouhouMobile/module/sweetalert.min.js"></script>
+    <script src="../TouhouMobile/script/topele.js"></script>
+  </head>
+  <body>
+    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - API</h>
+    <div pd><bl>
+      TouhouMobile has a API<br>
+      Use to get THM apps data
+    </bl></div><br>
+    <h>TouhouMobile - Doc</h>
+    <div pd><bl>
+      Has a global value touhouMobile<br>
+      Struct like : TouhouMobile(object) > Game Type(object) > Game Table(object)<br>
+      GameTable has <ul>
+        • info : App description<br>
+        • url : Download link<br>
+        • star : star by game uploader
+      </ul>
+      The End
+    </bl></div>
+    <fixed btn onclick="(function(){
+      navigator.clipboard.writeText( window.location.href.slice( 0, window.location.href.lastIndexOf( '/' ) ) + '/global.js' ).then( function(){
+        swal( 'okk', 'copy ✓', 'success' )
+      })
+    })()">Copy API Link</fixed>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+    <meta name="description" content="TouhouMobile 前端云">
+    <title>TouhouMobile - Cloud front end</title>
+    <link rel="stylesheet" href="../TouhouMobile/style/index.css">
+    <script src="../TouhouMobile/script/param.js"></script>
+    <script src="../TouhouMobile/module/sweetalert.min.js"></script>
+    <script src="../TouhouMobile/module/marked.min.js"></script>
+    <script src="../TouhouMobile/script/topele.js"></script>
+  </head>
+  <body>
+    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
+    <h>TouhouMobile - Cloud front end</h>
+    <div pd><bl>
+      This is cloud front end of TouhouMobile<br>
+      U can use it to create a website hub<br>
+      Can save smallfile too
+    </bl></div><br>
+    <h id="title">Setting</h>
+    <div pd id="page" style="color : #FDD;">
+      <bl>
+        <b>Page Title</b> :
+          <input type="text" id="header">
+        <b>Page Body</b> :
+          <textarea id="body">Input info u want</textarea>
+        • support Markdown Text<br>
+        • Except for the title and body, they are optional<br>
+        <b>Page links</b> : 
+          <input type="text" id="link">
+        <b>Page button</b> : 
+          <input type="text" id="btn">
+        <br>
+        • Out URL↓
+        <input type="text" id="url">
+        TouhouMobile front end cloud
+      </bl>
+        <br><br><br><br>
+        <div align="right">
+          <btn id="to">Go now w</btn>
+        </div>
+    </div>
+    <script src="./script/cloud.js"></script>
+  </body>
+</html>
