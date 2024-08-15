@@ -5,10 +5,12 @@ var listele = document.getElementById( "tools" ),
 listele.innerHTML = (function(){
     var html = ""
     for( let tool of list ){
-        html += `<tool>
-          <name><a href="${tool[2]}" style="color : #FFF;" class="none-shadow">${tool[0]}</a></name>
-          <info>${tool[1]}</info>
-        </tool>`
+        html += `<li id="tool-item">
+          <div id="name">
+            <a href="${tool[2]}" class="none-shadow">${tool[0]}</a>
+          </div>
+          <div id="info">${tool[1]}</div>
+        </li>`
     }
     return html
 })()
