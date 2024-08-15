@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -6,31 +6,50 @@
     <meta name="description" content="车万Project 手机资源">
     <title>TouhouMobile - API Document</title>
     <link rel="stylesheet" href="../TouhouMobile/style/index.css">
-    <script src="../TouhouMobile/module/sweetalert.min.js"></script>
+    <link rel="icon" href=".\favicon.png" />
+    <script src="./module/sweetalert.min.js"></script>
     <script src="../TouhouMobile/script/topele.js"></script>
   </head>
   <body>
-    <top onclick="back()"><img src="favicon.png" height="32px"> - Touhou Mobile</top><br>
-    <h>TouhouMobile - API</h>
-    <div pd><bl>
-      TouhouMobile has a API<br>
-      Use to get THM apps data
-    </bl></div><br>
-    <h>TouhouMobile - Doc</h>
-    <div pd><bl>
-      Has a global value touhouMobile<br>
-      Struct like : TouhouMobile(object) > Game Type(object) > Game Table(object)<br>
-      GameTable has <ul>
-        • info : App description<br>
-        • url : Download link<br>
-        • star : star by game uploader
-      </ul>
-      The End
-    </bl></div>
-    <fixed btn onclick="(function(){
-      navigator.clipboard.writeText( window.location.href.slice( 0, window.location.href.lastIndexOf( '/' ) ) + '/global.js' ).then( function(){
-        swal( 'okk', 'copy ✓', 'success' )
-      })
-    })()">Copy API Link</fixed>
+    <div id="head-menu">
+      <a id="head-title" href="javascript:back()">
+        <img src="favicon.png" height="32px" /> - Touhou Mobile
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile - API</h2>
+      <div pd>
+        <div class="left-border-line">
+          TouhouMobile has a API<br>
+          Use to get THM apps data
+        </div>
+      </div>
+      <h2>TouhouMobile - Doc</h2>
+      <div pd>
+        <div class="left-border-line">
+          Has a global value touhouMobile<br>
+          Struct like : TouhouMobile(object) > Game Type(object) > Game Table(object)<br>
+          GameTable has <ul>
+            • info : App description<br>
+            • url : Download link<br>
+            • star : star by game uploader
+          </ul>
+          The End
+        </div>
+      </div>
+      <button id="copy-api-addr">Copy API</button>
+    </div>
+    <script>
+      document.getElementById("copy-api-addr").onclick = function(){
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText( window.location.href.slice( 0, window.location.href.lastIndexOf( '/' ) ) + '/global.js' ).then( function(){
+            swal( 'okk', 'Copy success', 'success' )
+          })
+        }else{
+          swal( 'Error', '复制失败，不支持的环境(请手动复制链接)w\n' + window.location.href.slice( 0, window.location.href.lastIndexOf( '/' ) ) + '/global.js', 'error' )
+        }
+      }
+    </script>
   </body>
+
 </html>
