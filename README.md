@@ -1,4 +1,5 @@
 # THMobile-Inter
+Link : thm.us.kg  
 The International version of *TouhouMobile*   
 I will write this on my free time  
 My English is not well so if somewhere are not true please tell me  
