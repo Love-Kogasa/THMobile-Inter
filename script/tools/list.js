@@ -1,4 +1,4 @@
-var listele = document.getElementById( "tools" ),
+var listele = document.getElementById( "tool-list" ),
   list = [ 
     [ "THNames", "查询角色的三语名称( 中 英 日 )", "./name.html" ]
   ]
