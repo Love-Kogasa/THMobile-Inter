@@ -1,37 +1,42 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
     <link rel="icon" href="../group.png" />
-    <meta name="description" content="TouhouProject角色名称转换器">
-    <title>TouhouMobile - Name convert</title>
+    <meta name="description" content="TouhouProject Name convert">
+    <title>TouhouMobile - Names</title>
     <link rel="stylesheet" href="/TouhouMobile/style/index.css">
-    <script>function back(){
-      window.location.href = "../index.html"
-    }</script>
     <script src="../script/tools/name.js"></script>
   </head>
   <body onload="main(inp,full)">
-    <top onclick="back()"><img src="../favicon.png" height="32px"> - Touhou Mobile Inter</top><br>
-    <h>TouhouMobile - Names</h>
-    <div pd><bl>
-      TouhouMobile Name convert<br>
-      Input TH role en|cn|jp name to en&cn&jp name
-    </bl></div><br>
-    <h>TouhouMobile - Names</h>
-    <div pd>
-      <bl>
-        <b>input role name : </b>
-        <input type="text" id="inp" />
-        <tipbox class="" id="full">
-          <name>Loading</name>
-        </tipbox>
-        <ul id="out">
-          None
-        </ul>
-        awa
-      </bl>
+    <div id="head-menu">
+      <a id="head-title" href="../index.html">
+        <img src="../favicon.png" height="32px" /> - Touhou Mobile Inter
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile - Names</h2>
+      <div pd>
+        <div class="left-border-line">
+          TouhouMobile Name convert<br>
+          Input TH role en|cn|jp name to en&cn&jp name
+        </div>
+      </div>
+      <h2>TouhouMobile - Names</h2>
+      <div pd>
+        <div class="left-border-line">
+          <b>input role name :</b>
+          <input type="text" id="inp" />
+          <tipbox class="" id="full">
+            <div id="name">Loading</div>
+          </tipbox>
+          <ul id="out">
+            None
+          </ul>
+          awa
+        </div>
+      </div>
     </div>
   </body>
 </html>

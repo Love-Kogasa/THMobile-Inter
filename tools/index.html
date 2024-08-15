@@ -1,29 +1,35 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
     <meta name="description" content="TouhouMobile 工具箱">
-    <title>TouhouMobile - Tool Box</title>
+    <title>TouhouMobile - Tools Box</title>
     <link rel="stylesheet" href="/TouhouMobile/style/index.css">
-    <script>function back(){
-      window.location.href = "../index.html"
-    }</script>
+    <link rel="icon" href="../favicon.png" />
   </head>
   <body>
-    <top onclick="back()"><img src="../favicon.png" height="32px"> - Touhou Mobile Inter</top><br>
-    <h>TouhouMobile - Tools</h>
-    <div pd><bl>
-      TouhouMobile Toolbox<br>
-      Can find some nice tool their<s>maybe</s>
-    </bl></div><br>
-    <h>TouhouMobile - ToolList</h>
-    <ul id="tools">
-      <tool>
-        <name>Wait</name>
-        <info>Loading...</info>
-      </tool>
-    </ul>
+    <div id="head-menu">
+      <a id="head-title" href="../index.html">
+        <img src="/favicon.png" height="32px" /> - Touhou Mobile
+      </a>
+    </div>
+    <div id="main-content">
+      <h2>TouhouMobile - Tools</h2>
+      <div pd>
+        <div class="left-border-line">
+          TouhouMobile Toolbox<br>
+          Can find some nice tool their<s>maybe</s>
+        </div>
+      </div>
+      <h2>TouhouMobile - ToolList</h2>
+      <ul id="tool-list">
+        <li id="tool-item">
+          <div id="name">Wait</div>
+          <div id="info">Loading...</div>
+        </li>
+      </ul>
+    </div>
     <script src="../script/tools/list.js"></script>
   </body>
 </html>
