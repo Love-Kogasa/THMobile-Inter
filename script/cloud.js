@@ -20,6 +20,8 @@ if( $GET !== void 0 && typeof $GET[ "page" ] === "string" ){
           encodeURI( btn.value || "前往链接w" )}`
     }
     url.oncopy = function(){
+        event.preventDefault()
+        event.clipboardData.setData('text/plain', url.value)
         swal( {
           text : "复制成功w",
           icon : "success",
